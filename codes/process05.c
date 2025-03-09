@@ -21,7 +21,6 @@ int main()
   	  printf("\nI am the parent, my pid = %d and my parent's pid = %d\n\n", getpid(), getppid());	  	
   	  sleep(10);
   	  pid = wait(&stat_loc);
-	  sleep(10);
   	  if(!(stat_loc & 0x00FF))
   	    printf("\nA child with pid %d terminated with exit code %d\n", pid, stat_loc>>8);
 	}  

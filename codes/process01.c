@@ -15,12 +15,13 @@ int main()
   {
     x = 7;
     printf("\nI am the child, my pid = %d and my parent's pid = %d, and the value of x = %d\n\n", getpid(), getppid(), x);
+    sleep(11);
   }
   else
   {
     x = 19;
     printf("\nI am the parent, my pid = %d and my parent's pid = %d, and the value of x = %d\n\n", getpid(), getppid(), x);
-    sleep(1);
+    sleep(10);
   }
 
   printf("\n Finish: PID:%d, X:%d\n\n", getpid(), x);

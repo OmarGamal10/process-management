@@ -1,6 +1,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <sys/wait.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -15,7 +16,8 @@ int main()
 	else if (pid == 0)
 	{
 		printf("\nI am the child, my pid = %d and my parent's pid = %d\n\n", getpid(), getppid());
-		sleep(10);
+		sleep(5);
+		exit(21);
 	}
 	else
 	{

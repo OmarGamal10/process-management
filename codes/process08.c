@@ -8,6 +8,7 @@ int main()
 {
 	int pid;
 	long counter;
+	
 	pid = fork();
 
 	if (pid == -1)

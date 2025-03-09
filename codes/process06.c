@@ -16,7 +16,7 @@ int main()
 	{
 		printf("\nI am the child, my pid = %d and my parent's pid = %d\n\n", getpid(), getppid());
 		// execl("/mnt/c/Lab3/Codes/hello", "hello", "Muhammad", NULL);
-		execl("/bin/ps", "ps", "-e", NULL);
+		execl("/bin/ps", "ps", "-l", NULL);
 		printf("This line will not be printed");
 	}
 	else
